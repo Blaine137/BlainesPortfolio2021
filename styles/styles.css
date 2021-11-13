@@ -117,6 +117,7 @@ header{
 
 #homeSection{
     margin-bottom: 40px;
+    position: relative;
 }
 
 .heroContainer{
@@ -281,5 +282,56 @@ header{
 /*WORK SECTION*/
 .workContainer{
     padding: 80px 0 80px 0;
-    height: 100vh;
+    height: 100%;
+}
+
+.heroDigitalLogo, .projectLogo{
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.workDescription{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.workDescription h4{
+    font-size: 1rem;
+    margin-top: 7px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.workDescription h4 .techStack{
+    color: #8444df;
+}
+
+.workDescription ul{
+    list-style: disc;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.workDescription .workLinks{
+    margin-top: 25px;
+}
+
+.workDescription .workLinks a{
+    font-size: 1.1rem;
+    margin-right: 20px;
+    color: #8444df;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.workFirstItem, .workSecondItem, .workThirdItem{
+    background: white;
+    border-radius: 10px;
+}
+
+.workSecondItem, .workThirdItem{
+    margin-top: 40px;
 }
