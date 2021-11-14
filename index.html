@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">
+                    <a href="#contactSection" class="navLink">
                       <img src="/images/address-book-regular.svg" alt="Contact Icon" class="navItemIcon contactIcon">
                       <span class="navItemName">CONTACT</span>  
                     </a>
@@ -177,7 +177,7 @@
                         <li class="skillsItem">
                             <div class="itemContainer">
                                 <img src="/images/cucumber.png" alt="Cucumberjs Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Cucumberjs</p>
+                                <p class="itemTitle">Cucumber</p>
                             </div>
                         </li>
                         <li class="skillsItem">
@@ -298,7 +298,31 @@
                 </div>
             </div>
         </section>
+
+        <!--CONTACT SECTION-->
+        <section id="contactSection">
+            <div class="contactContainer">
+                <span class="headerDescription">SAY HELLO</span>
+                <h2 class="workTitle">Contact</h2>
+                <form action="https://formspree.io/f/meqvygdq" id="contactForm" method="POST">
+                    <label for="nameInput" class="srOnly"></label>
+                    <input type="text" id="nameInput" class="nameInput" name="nameInput" required placeholder="Your Name*">
+                    <label for="emailInput" class="srOnly"></label>
+                    <input type="text" id="emailInput" class="emailInput" name="emailInput" required placeholder="Your Email*">
+                    <label for="subjectInput" class="srOnly"></label>
+                    <input type="text" id="subjectInput" class="subjectInput" name="subjectInput" required placeholder="Subject*">
+                    <label for="messageInput" class="srOnly"></label>
+                    <textarea name="messageInput" id="messageInput" class="messageInput" placeholder="Your Message*"></textarea>
+                </form>
+                <button class="formSend" type="submit" target="_blank" form="contactForm" rel="noopener noreferrer">SEND</button>
+            </div>
+        </section>
     </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>© Blaine Young 2021</p>
+    </footer>
 
     <!--JAVASCRIPT-->
     <script type="text/javascript" src="/js/index.js">
