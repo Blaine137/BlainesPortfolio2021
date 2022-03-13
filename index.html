@@ -10,10 +10,16 @@
 </head>
 <body>
     <!-- MOBILE MENU BUTTON-->
-    <div class="hamburger" tabindex="0">
+    <!-- <button class="hamburger" tabindex="0" aria-label="Mobile Menu Button">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
+    </button> -->
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <!--DESKTOP NAVIGATION MENU-->
     <aside class="sideMenu sideMenuHide">
@@ -74,10 +80,10 @@
                     <div class="headerButtons">
                         <a href="/images/BlaineYoungResume.pdf" class="resumeLink">Resume</a>
                         <div class="socialLinks">
-                            <a href="https://github.com/Blaine137" class="githubLink">
+                            <a href="https://github.com/Blaine137" class="githubLink" target="_blank">
                                 <img src="/images/github-square-brands.svg" alt="Github Icon" class="githubIcon">
                             </a>
-                            <a href="https://www.linkedin.com/in/blaineyoung137/" class="linkedinLink">
+                            <a href="https://www.linkedin.com/in/blaineyoung137/" class="linkedinLink" target="_blank">
                                 <img src="/images/linkedin-brands.svg" alt="LinkedIn Icon" class="linkedinIcon">
                             </a>
                         </div>
@@ -325,14 +331,11 @@
     </footer>
 
     <!--JAVASCRIPT-->
-    <script type="text/javascript" src="/js/index.js">
-    //CUSTOM JS FILE
-    </script>
-    <script type="text/javascript" src="/js/particles.min.js">
-        //PARTICLE JS LIBRARY
-    </script>
     <script type="text/javascript" src="/js/particles.js">
         //PARTICLE JS FILE
+    </script>
+    <script type="text/javascript" src="/js/index.js">
+        //CUSTOM JS FILE
     </script>
 </body>
 </html>
