@@ -19,43 +19,6 @@ body{
 }
 
 /*MOBILE MENU BUTTON*/
-/* .hamburger{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    position: fixed;
-    right: 25px;
-    top: 35px;
-    cursor: pointer;
-    z-index: 20;
-    border: none;
-    background: transparent;
-}
-
-.hamburger input{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hamburger:focus{
-    background: transparent;
-}
-
-.line{
-    height: 5px;
-    width: 100%;
-    background-color: black;
-    margin: 5px 0 0 0;
-}
-
-.line:first-child{
-    margin-top: 0;
-} */
-
 #hamburger{
     width: 50px;
     height: 50px;
@@ -145,12 +108,12 @@ body{
     z-index: 10;
 }
 
-.sideMenuHide{
+.sideMenu--hide{
     top: 0;
     left: -300px;
 }
 
-.sideMenuShow{
+.sideMenu--Show{
     top: 0;
     left: 0;
     display: flex;
@@ -170,17 +133,17 @@ body{
     padding: 26px;
 }
 
-.navBar{
+.navMenu__navBar{
     padding: 0;
     list-style: none;
 }
 
-.navItem:hover{
+.navMenu__item:hover{
     background-color: #9D69E5;
     box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
 }
 
-.navLink{
+.navMenu__link{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -190,13 +153,13 @@ body{
     font-size: 1.3rem;
 }
 
-.navItemIcon{
+.navMenu__linkIcon{
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
 
-.navItemName{
+.navMenu__linkName{
     color: white;
     margin-right: 40px;
     font-size: 0.75rem;
@@ -215,12 +178,12 @@ header{
     position: relative;
 }
 
-.heroContainer{
+.header{
     height: auto;
     margin-top: 100px;
 }
 
-.header{
+.header__title{
     font-size: 2.5rem;
     letter-spacing: 2px;
     margin: 24px 0;
@@ -231,37 +194,37 @@ header{
     color: #8444df;
 }
 
-.smallbio{
+.header__smallBio{
     font-size: 1rem;
     min-width: 250px;
     line-height: 1.4;
     letter-spacing: 1px;
     padding: 0 15px 0 15px;
     text-align: left;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3));
+    background: #f7f7f7;
 }
 
-.title{
+.header__career{
     color: #8444df;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.heroImage{
+.header__logo{
     width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.headerButtons{
+.header__buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
 
-.resumeLink{
+.header__resumeLink{
     padding: 15px 35px;
     border-radius: 40px;
     font-size: 0.9rem;
@@ -271,12 +234,12 @@ header{
     text-decoration: none;
 }
 
-.socialLinks{
+.header__socialLinks{
     display: flex;
     margin-top: 12px;
 }
 
-.githubLink, .linkedinLink{
+.header__link{
     display: flex;
     padding: 9px 10px;
     background-color: white;
@@ -285,11 +248,11 @@ header{
     box-shadow: 0px 4px 6px rgb(134 151 168 / 10%);
 }
 
-.githubLink{
+.header__link:first-child{
     margin-right: 10px;
 }
 
-.githubIcon, .linkedinIcon{
+.header__socialIcon{
     width: 20px;
 }
 
@@ -299,12 +262,12 @@ header{
 }
 
 /*ABOUT SECTION*/
-.aboutContainer{
+.about{
     height: 100vh;
     padding: 80px 0 80px 0;
 }
 
-.headerDescription{
+.about__description, .skills__description, .work__description, .contact__description{
     padding-bottom: 20px;
     padding-left: 60px;
     display: block;
@@ -313,7 +276,7 @@ header{
     position: relative;
 }
 
-.headerDescription::before{
+.about__description::before, .skills__description::before, .work__description::before, .contact__description::before{
     content: '';
     position: absolute;
     left: 0;
@@ -323,7 +286,7 @@ header{
     background: #333;
 }
 
-.aboutTitle, .skillsTitle, .workTitle{
+.about__title, .skills__title, .work__title, .contact__title{
     /*TITLES FOR EACH SECTION*/
     font-size: 1.6rem;
     letter-spacing: 2px;
@@ -331,19 +294,19 @@ header{
     margin-bottom: 50px;
 }
 
-.aboutBio{
+.about__bio{
     line-height: 1.5;
     font-size: 1.2rem;
 
 }
 
 /*SKILLS SECTION*/
-.skillsContainer{
+.skills{
     padding: 80px 0 80px 0;
     height: 100vh;
 }
 
-.skillsList{
+.skills__list{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -352,11 +315,11 @@ header{
     justify-items: center;
 }
 
-.itemContainer{
+.skills__itemContainer{
     text-align: center;
 }
 
-.skillsItem{
+.skills__item{
     background-color: white;
     padding: 10px;
     width: 80px;
@@ -366,56 +329,56 @@ header{
     border: 1px solid #eee;
 }
 
-.itemIcon{
+.skills__itemIcon{
     width: 35px;
     height: 35px;
 }
 
-.itemTitle{
+.skills__itemTitle{
     font-size: 0.8rem;
 }
 
 /*WORK SECTION*/
-.workContainer{
+.work{
     padding: 80px 0 80px 0;
     height: 100%;
 }
 
-.heroDigitalLogo, .projectLogo{
+.work__logo{
     margin: 0 auto 0 auto;
     display: block;
 }
 
-.workDescription{
+.work__logoDescription{
     margin-top: 20px;
     font-size: 1.2rem;
     line-height: 1.4;
     padding: 20px;
 }
 
-.workDescription h4{
+.work__logoDescription h4{
     font-size: 1rem;
     margin-top: 7px;
     letter-spacing: 1px;
     line-height: 1.2;
 }
 
-.workDescription h4 .techStack{
+.work__logoDescription h4 .techStack{
     color: #8444df;
 }
 
-.workDescription ul{
+.work__logoDescription ul{
     list-style: disc;
     font-size: 0.9rem;
     letter-spacing: 1px;
     margin-top: 20px;
 }
 
-.workDescription .workLinks{
+.work__logoDescription .workLinks{
     margin-top: 25px;
 }
 
-.workDescription .workLinks a{
+.work__logoDescription .workLinks a{
     font-size: 1.1rem;
     margin-right: 20px;
     color: #8444df;
@@ -423,17 +386,13 @@ header{
     text-decoration: underline;
 }
 
-.workFirstItem, .workSecondItem, .workThirdItem{
+.workFirstItem{
     background: white;
     border-radius: 10px;
 }
 
-.workSecondItem, .workThirdItem{
-    margin-top: 40px;
-}
-
 /*CONTACT SECTION*/
-.contactContainer{
+.contact{
     padding: 80px 0 80px 0;
     height: 100vh;
     display: flex;
@@ -441,7 +400,7 @@ header{
     justify-content: center;
 }
 
-.contactContainer form{
+.contact form{
     display: grid;
     row-gap: 20px;
     column-gap: 25px;
@@ -461,7 +420,7 @@ header{
     overflow: hidden;
 }
 
-.contactContainer form input, .contactContainer form textarea{
+.contact form input, .contact form textarea{
     border: 1px solid #eee;
     transition: all 0.3s ease-in;
     padding: 11px 20px;
@@ -470,7 +429,7 @@ header{
     width: 100%;
 }
 
-.contactContainer button{
+.contact button{
     padding: 14px 40px;
     font-size: 0.9rem;
     border: none;

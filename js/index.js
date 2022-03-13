@@ -1,6 +1,6 @@
 let menuButton = document.querySelector('#hamburger');
 let sideMenu = document.querySelector('.sideMenu');
-let links = document.querySelectorAll('.navLink');
+let links = document.querySelectorAll('.navMenu__link');
 let mainSection = document.querySelector('.mainSection');
 
 //load particlesjs
@@ -11,12 +11,12 @@ particlesJS.load('particles-js', 'js/particles.json', function() {
 //CLICK EVENT FOR MOBILE SHOW/HIDE NAV
 menuButton.addEventListener('click', (e) => {
 
-    if(sideMenu.classList.contains('sideMenuHide')){
-        sideMenu.classList.remove('sideMenuHide');
-        sideMenu.classList.add('sideMenuShow');
+    if(sideMenu.classList.contains('sideMenu--hide')){
+        sideMenu.classList.remove('sideMenu--hide');
+        sideMenu.classList.add('sideMenu--show');
     }else{
-        sideMenu.classList.remove('sideMenuShow');
-        sideMenu.classList.add('sideMenuHide');
+        sideMenu.classList.remove('sideMenu--show');
+        sideMenu.classList.add('sideMenu--hide');
     }
 
     if(menuButton.classList.contains('open')){
@@ -29,10 +29,10 @@ menuButton.addEventListener('click', (e) => {
 
 //CLICK EVENT TO CLOSE SIDE MENU
 mainSection.addEventListener('click', (e) => {
-    if(sideMenu.classList.contains('sideMenuShow')){
+    if(sideMenu.classList.contains('sideMenu--show')){
         console.log('test')
-        sideMenu.classList.remove('sideMenuShow');
-        sideMenu.classList.add('sideMenuHide');
+        sideMenu.classList.remove('sideMenu--show');
+        sideMenu.classList.add('sideMenu--hide');
         menuButton.classList.remove('open');
     }
 });
@@ -40,8 +40,8 @@ mainSection.addEventListener('click', (e) => {
 //CLICK EVENT TO CLOSE THE NAVIGATION ON CLICK OF A LINK
 links.forEach(link => {
     link.addEventListener('click', () => {
-        sideMenu.classList.remove('sideMenuShow');
-        sideMenu.classList.add('sideMenuHide');
+        sideMenu.classList.remove('sideMenu--show');
+        sideMenu.classList.add('sideMenu--hide');
         menuButton.classList.remove('open');
     });
 });

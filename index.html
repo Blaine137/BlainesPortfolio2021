@@ -10,50 +10,45 @@
 </head>
 <body>
     <!-- MOBILE MENU BUTTON-->
-    <!-- <button class="hamburger" tabindex="0" aria-label="Mobile Menu Button">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </button> -->
-    <div id="hamburger">
+    <button id="hamburger" aria-label="Open Mobile Navigation Menu">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </button>
     <!--DESKTOP NAVIGATION MENU-->
-    <aside class="sideMenu sideMenuHide">
+    <aside class="sideMenu sideMenu--hide">
         <p class="initials">By</p>
         <nav class="navMenu">
-            <ul class="navBar">
-                <li class="navItem">
-                    <a href="#homeSection" class="navLink">
-                      <img src="/images/home-solid.svg" alt="About Icon" class="navItemIcon homeIcon">
-                      <span class="navItemName">HOME</span>  
+            <ul class="navMenu__navBar">
+                <li class="navMenu__item">
+                    <a href="#homeSection" class="navMenu__link" aria-label="link to home section">
+                      <img src="/images/home-solid.svg" alt="About Icon" class="navMenu__linkIcon">
+                      <span class="navMenu__linkName">HOME</span>  
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#aboutSection" class="navLink">
-                      <img src="/images/male-solid.svg" alt="Home Icon" class="navItemIcon aboutIcon">
-                      <span class="navItemName">ABOUT</span>  
+                    <a href="#aboutSection" class="navMenu__link" aria-label="link to about section">
+                      <img src="/images/male-solid.svg" alt="Home Icon" class="navMenu__linkIcon">
+                      <span class="navMenu__linkName">ABOUT</span>  
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#skillsSection" class="navLink">
-                      <img src="/images/laptop-code-solid.svg" alt="Skills Icon" class="navItemIcon skillsIcon">
-                      <span class="navItemName">SKILLS</span>  
+                    <a href="#skillsSection" class="navMenu__link" aria-label="link to skills section">
+                      <img src="/images/laptop-code-solid.svg" alt="Skills Icon" class="navMenu__linkIcon">
+                      <span class="navMenu__linkName">SKILLS</span>  
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#workSection" class="navLink">
-                      <img src="/images/code-branch-solid.svg" alt="Work Icon" class="navItemIcon workIcon">
-                      <span class="navItemName">WORK</span>  
+                    <a href="#workSection" class="navMenu__link" aria-label="link to work section">
+                      <img src="/images/code-branch-solid.svg" alt="Work Icon" class="navMenu__linkIcon">
+                      <span class="navMenu__linkName">WORK</span>  
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#contactSection" class="navLink">
-                      <img src="/images/address-book-regular.svg" alt="Contact Icon" class="navItemIcon contactIcon">
-                      <span class="navItemName">CONTACT</span>  
+                    <a href="#contactSection" class="navMenu__link" aria-label="link to contact me section">
+                      <img src="/images/address-book-regular.svg" alt="Contact Icon" class="navMenu__linkIcon">
+                      <span class="navMenu__linkName">CONTACT</span>  
                     </a>
                 </li>
             </ul>
@@ -66,25 +61,25 @@
         <section id="homeSection">
             <div id="particles-js"></div>
             <header>
-                <div class="heroContainer">
-                    <img src="/images/codeReview.svg" alt="Code Review Image" class="heroImage" width="250" height="162">
-                    <h1 class="header">
+                <div class="header">
+                    <img src="/images/codeReview.svg" alt="Code Review Image" class="header__logo" width="250" height="162">
+                    <h1 class="header__title">
                         <span class="firstWord">Blaine</span> Young
                     </h1>
-                    <p class="smallbio">
-                        A <span class="title">Full-Stack Developer</span> who loves to create 
+                    <p class="header__smallBio">
+                        A <span class="header__career">Full-Stack Developer</span> who loves to create 
                         interactive user interfaces and writing the 
                         logic to make web applications function 
                         as expected.
                     </p>
-                    <div class="headerButtons">
-                        <a href="/images/BlaineYoungResume.pdf" class="resumeLink">Resume</a>
-                        <div class="socialLinks">
-                            <a href="https://github.com/Blaine137" class="githubLink" target="_blank">
-                                <img src="/images/github-square-brands.svg" alt="Github Icon" class="githubIcon">
+                    <div class="header__buttons">
+                        <a href="/images/BlaineYoungResume.pdf" class="header__resumeLink">Resume</a>
+                        <div class="header__socialLinks">
+                            <a href="https://github.com/Blaine137" class="header__link" target="_blank">
+                                <img src="/images/github-square-brands.svg" alt="Github Icon" class="header__socialIcon">
                             </a>
-                            <a href="https://www.linkedin.com/in/blaineyoung137/" class="linkedinLink" target="_blank">
-                                <img src="/images/linkedin-brands.svg" alt="LinkedIn Icon" class="linkedinIcon">
+                            <a href="https://www.linkedin.com/in/blaineyoung137/" class="header__link" target="_blank">
+                                <img src="/images/linkedin-brands.svg" alt="LinkedIn Icon" class="header__socialIcon">
                             </a>
                         </div>
                     </div>
@@ -94,10 +89,10 @@
 
         <!--ABOUT SECTION-->
         <section id="aboutSection">
-            <div class="aboutContainer">
-                <span class="headerDescription">SOME INFO</span>
-                <h2 class="aboutTitle">About Me</h2>
-                <p class="aboutBio">
+            <div class="about">
+                <span class="about__description">SOME INFO</span>
+                <h2 class="about__title">About Me</h2>
+                <p class="about__bio">
                     Starting off as a Front-End Developer, I graduated from Southern Crescent Technical College 
                     with a Computer Programming Associates Degree. After a year of building user interfaces I 
                     attended and graduated from a Full-Stack Javascript coding bootcamp at Nucamp where now 
@@ -109,99 +104,99 @@
 
         <!--SKILLS SECTION-->
         <section id="skillsSection">
-            <div class="skillsContainer">
-                <span class="headerDescription">CHECK OUT MY</span>
-                <h2 class="skillsTitle">Skills</h2>
-                <div class="skillsListContainer">
-                    <ul class="skillsList">
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/html5-brands.svg" alt="HTML5 Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">HTML5</p>
+            <div class="skills">
+                <span class="skills__description">CHECK OUT MY</span>
+                <h2 class="skills__title">Skills</h2>
+                <div>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/html5-brands.svg" alt="HTML5 Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">HTML5</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/css3-alt-brands.svg" alt="CSS3 Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">CSS3</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/css3-alt-brands.svg" alt="CSS3 Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">CSS3</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/sass-brands.svg" alt="SASS Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">SASS</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/sass-brands.svg" alt="SASS Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">SASS</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/js-square-brands.svg" alt="Javascript Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Javascript</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/js-square-brands.svg" alt="Javascript Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Javascript</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/react-brands.svg" alt="React Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">React</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/react-brands.svg" alt="React Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">React</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/redux.svg" alt="Redux Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Redux</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/redux.svg" alt="Redux Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Redux</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/node-js-brands.svg" alt="Nodejs Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Nodejs</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/node-js-brands.svg" alt="Nodejs Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Nodejs</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/npm.svg" alt="NPM Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">NPM</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/npm.svg" alt="NPM Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">NPM</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/git-alt-brands.svg" alt="Git Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Git</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/git-alt-brands.svg" alt="Git Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Git</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/mongodb-icon-1.svg" alt="MongoDB Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">MongoDB</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/mongodb-icon-1.svg" alt="MongoDB Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">MongoDB</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/mysql.svg" alt="MySQL Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">MySQL</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/mysql.svg" alt="MySQL Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">MySQL</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/cucumber.png" alt="Cucumberjs Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Cucumber</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/cucumber.png" alt="Cucumberjs Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Cucumber</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/java-brands.svg" alt="Java Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">Java</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/java-brands.svg" alt="Java Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">Java</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/aem.png" alt="AEM Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">AEM</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/aem.png" alt="AEM Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">AEM</p>
                             </div>
                         </li>
-                        <li class="skillsItem">
-                            <div class="itemContainer">
-                                <img src="/images/php-brands.svg" alt="PHP Icon" class="itemIcon" width="35" height="35">
-                                <p class="itemTitle">PHP</p>
+                        <li class="skills__item">
+                            <div class="skills__itemContainer">
+                                <img src="/images/php-brands.svg" alt="PHP Icon" class="skills__itemIcon" width="35" height="35">
+                                <p class="skills__itemTitle">PHP</p>
                             </div>
                         </li>
                     </ul>
@@ -211,13 +206,13 @@
 
         <!--WORK SECTION-->
         <section id="workSection">
-            <div class="workContainer">
-                <span class="headerDescription">TAKE A LOOK AT MY</span>
-                <h2 class="workTitle">Work</h2>
-                <div class="workFlexContainer">
+            <div class="work">
+                <span class="work__description">TAKE A LOOK AT MY</span>
+                <h2 class="work__title">Work</h2>
+                <div>
                     <div class="workFirstItem">
-                        <img src="/images/herodigital.svg" alt="Hero Digital Logo" width="317" height="159" class="heroDigitalLogo">
-                        <div class="workDescription">
+                        <img src="/images/herodigital.svg" alt="Hero Digital Logo" width="317" height="159" class="work__Logo">
+                        <div class="work__logoDescription">
                             <h3>Associate Back-End Engineer</h3>
                             <h4>
                                 Technologies Used: 
@@ -229,74 +224,16 @@
                                 <span class="techStack">Cucumberjs</span>
                             </h4>
                             <ul>
-                                <li>implementing dialog boxes for authors to create and manage content</li>
+                                <li>contributed to many projects such as Jefferson Health, Robert Wood Johnson Foundation and Credit One Bank</li>
+                                <li>storing data with models</li>
                                 <li>creating custom AEM components</li>
-                                <li>extending functionality of out of the box components</li>
+                                <li>extending functionality of out of the box AEM components</li>
                                 <li>writing automated tests</li>
+                                <li>servlet implementation</li>
                             </ul>
                             <div class="workLinks">
-                                <a href="https://herodigital.com/" class="liveLink" target="_blank" rel="noopener noreferrer">
+                                <a href="https://herodigital.com/" target="_blank" rel="noopener noreferrer">
                                     Company
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="workSecondItem">
-                        <img src="/images/unanimity.webp" alt="unanimity video" width="317" height="159" class="projectLogo">
-                        <div class="workDescription">
-                            <h3>Unanimity</h3>
-                            <h4>
-                                Technologies Used: 
-                                <span class="techStack">React</span>, 
-                                <span class="techStack">SCSS</span>, 
-                                <span class="techStack">Redux</span>,
-                                <span class="techStack">Material UI</span>, 
-                                <span class="techStack">Axios</span>,
-                                <span class="techStack">Firebase</span>,
-                                <span class="techStack">Heroku</span>
-                            </h4>
-                            <ul>
-                                <li>constructed an API that creates, reads, updates and deletes data from Firebase</li>
-                                <li>implemented Redux store for a single source of truth</li>
-                                <li>handled data manipulation to show messages in order</li>
-                                <li>added engaging animations to keep users interactive</li>
-                            </ul>
-                            <div class="workLinks">
-                                <a href="https://unanimity.herokuapp.com/" class="liveLink" target="_blank" rel="noopener noreferrer">
-                                    Live
-                                </a>
-                                <a href="https://github.com/Blaine137/unanimity" class="liveLink" target="_blank" rel="noopener noreferrer">
-                                    Repo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="workThirdItem">
-                        <img src="/images/swiftfoods.webp" alt="unanimity video" width="317" height="159" class="projectLogo">
-                        <div class="workDescription">
-                            <h3>Swift Foods</h3>
-                            <h4>
-                                Technologies Used: 
-                                <span class="techStack">React</span>, 
-                                <span class="techStack">Nodejs</span>, 
-                                <span class="techStack">Express</span>,
-                                <span class="techStack">Passportjs</span>,
-                                <span class="techStack">Stripe</span>,
-                                <span class="techStack">MongoDB</span>, 
-                                <span class="techStack">Heroku</span>
-                            </h4>
-                            <ul>
-                                <li>added session-based authentication</li>
-                                <li>implemented Stripe to take valid card numbers for payments</li>
-                                <li>database integration for faster load times</li>
-                                <li>created API that communicates with client and server</li>
-                            </ul>
-                            <div class="workLinks">
-                                <a href="https://swiftfoods.herokuapp.com/" class="liveLink" target="_blank" rel="noopener noreferrer">
-                                    Live
-                                </a>
-                                <a href="https://github.com/Blaine137/SwiftFoods-Express-React-MongoDB" class="liveLink" target="_blank" rel="noopener noreferrer">
-                                    Repo
                                 </a>
                             </div>
                         </div>
@@ -307,20 +244,20 @@
 
         <!--CONTACT SECTION-->
         <section id="contactSection">
-            <div class="contactContainer">
-                <span class="headerDescription">SAY HELLO</span>
-                <h2 class="workTitle">Contact</h2>
+            <div class="contact">
+                <span class="contact__description">SAY HELLO</span>
+                <h2 class="contact__title">Contact</h2>
                 <form action="https://formspree.io/f/meqvygdq" id="contactForm" method="POST">
-                    <label for="nameInput" class="srOnly"></label>
+                    <label for="nameInput" class="contact__srOnly"></label>
                     <input type="text" id="nameInput" class="nameInput" name="nameInput" required placeholder="Your Name*">
-                    <label for="emailInput" class="srOnly"></label>
+                    <label for="emailInput" class="contact__srOnly"></label>
                     <input type="text" id="emailInput" class="emailInput" name="emailInput" required placeholder="Your Email*">
-                    <label for="subjectInput" class="srOnly"></label>
+                    <label for="subjectInput" class="contact__srOnly"></label>
                     <input type="text" id="subjectInput" class="subjectInput" name="subjectInput" required placeholder="Subject*">
-                    <label for="messageInput" class="srOnly"></label>
+                    <label for="messageInput" class="contact__srOnly"></label>
                     <textarea name="messageInput" id="messageInput" class="messageInput" placeholder="Your Message*"></textarea>
                 </form>
-                <button class="formSend" type="submit" target="_blank" form="contactForm" rel="noopener noreferrer">SEND</button>
+                <button class="contact__formSubmit" type="submit" target="_blank" form="contactForm" rel="noopener noreferrer">SEND</button>
             </div>
         </section>
     </main>
