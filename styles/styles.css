@@ -313,6 +313,8 @@ header{
     column-gap: 15px;
     row-gap: 15px;
     justify-items: center;
+    max-width: 750px;
+    margin-right: auto;
 }
 
 .skills__itemContainer{
@@ -455,3 +457,13 @@ footer p{
    font-size: 1rem;
    text-align: center; 
 }
+
+@media screen and (min-width: 1200px) {
+    #hamburger{
+        display: none;
+    }
+
+    .mainSection{
+        margin-left: 220px;
+    }
+  }

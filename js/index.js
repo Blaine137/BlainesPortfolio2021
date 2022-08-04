@@ -29,19 +29,32 @@ menuButton.addEventListener('click', (e) => {
 
 //CLICK EVENT TO CLOSE SIDE MENU
 mainSection.addEventListener('click', (e) => {
-    if(sideMenu.classList.contains('sideMenu--show')){
-        console.log('test')
-        sideMenu.classList.remove('sideMenu--show');
-        sideMenu.classList.add('sideMenu--hide');
-        menuButton.classList.remove('open');
+    if(window.innerWidth < 1200){
+        if(sideMenu.classList.contains('sideMenu--show')){
+            console.log('test')
+            sideMenu.classList.remove('sideMenu--show');
+            sideMenu.classList.add('sideMenu--hide');
+            menuButton.classList.remove('open');
+        }
     }
 });
 
 //CLICK EVENT TO CLOSE THE NAVIGATION ON CLICK OF A LINK
 links.forEach(link => {
     link.addEventListener('click', () => {
-        sideMenu.classList.remove('sideMenu--show');
-        sideMenu.classList.add('sideMenu--hide');
-        menuButton.classList.remove('open');
+        if(window.innerWidth < 1200){
+            sideMenu.classList.remove('sideMenu--show');
+            sideMenu.classList.add('sideMenu--hide');
+            menuButton.classList.remove('open');
+        }
     });
 });
+
+if(window.innerWidth >= 1200){
+    sideMenu.classList.remove('sideMenu--hide')
+    sideMenu.classList.add('sideMenu--show')
+}else{
+    if(!sideMenu.classList.contains('sideMenu--hide')){
+        sideMenu.classList.add('sideMenu--hide')
+    }
+}
