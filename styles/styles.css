@@ -188,6 +188,8 @@ header{
     letter-spacing: 2px;
     margin: 24px 0;
     text-align: center;
+    box-shadow: 0 0 4px 4px #f7f7f7;
+    background: #f7f7f7;
 }
 
 .firstWord{
@@ -202,6 +204,7 @@ header{
     padding: 0 15px 0 15px;
     text-align: left;
     background: #f7f7f7;
+    box-shadow: 0 0 4px 4px #f7f7f7;
 }
 
 .header__career{
@@ -232,11 +235,13 @@ header{
     letter-spacing: 2px;
     color: white;
     text-decoration: none;
+    box-shadow: 0 0 4px 4px #f7f7f7;
 }
 
 .header__socialLinks{
     display: flex;
     margin-top: 12px;
+    box-shadow: 0 0 4px 4px #f7f7f7;
 }
 
 .header__link{
@@ -459,11 +464,73 @@ footer p{
 }
 
 @media screen and (min-width: 1200px) {
+    /*HOME SECTION */
     #hamburger{
         display: none;
     }
 
+    .header{
+        margin-top: 0;
+    }
+
+    .header__logo{
+        width: 300px;
+    }
+
+    .header__title{
+        font-size: 3rem;
+    }
+
+    .header__smallBio{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .header__career{
+        font-size: 1.2rem;
+    }
+
+    .header__resumeLink{
+        font-size: 1.2rem;
+    }
+
+    .header__resumeLink:hover{
+        background: #773dc8;
+    }
+
+    .header__resumeLink:focus{
+        background: rgba(132, 68, 223, 1);
+    }
+
+    .header__socialIcon{
+        width: 30px;
+    }
+
     .mainSection{
         margin-left: 220px;
+    }
+
+    /*ABOUT SECTION*/
+    .about__title, .skills__title, .work__title, .contact__title{
+        font-size: 1.7rem;
+    }
+
+    .about__bio{
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        background: white;
+        border-radius: 40px;
+        padding: 40px;
+    }
+
+    /*SKILLS SECTION*/
+    .skills__list{
+        width: 75%;
+        background: white;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 40px;
     }
   }
