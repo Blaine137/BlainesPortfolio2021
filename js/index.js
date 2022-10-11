@@ -50,6 +50,7 @@ links.forEach(link => {
     });
 });
 
+//REMOVE HIDE SIDE MENU IF ON DESKTOP
 if(window.innerWidth >= 1200){
     sideMenu.classList.remove('sideMenu--hide')
     sideMenu.classList.add('sideMenu--show')

@@ -261,6 +261,10 @@ header{
     width: 20px;
 }
 
+.header__arrow--container{
+    display: none;
+}
+
 /*Main*/
 .mainSection{
     padding: 0 15px 0 15px;
@@ -507,6 +511,27 @@ footer p{
         width: 30px;
     }
 
+    .header__link:hover{
+        background-color: black;
+    }
+
+    .header__arrow--container{
+        background-color: #f7f7f7;
+        box-shadow: 0 0 4px 4px #f7f7f7;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 40px auto 0 auto;
+    }
+
+    .header__arrow--icon{
+        fill: #8444df;
+    }
+
+    .header__arrow--icon:hover{
+        fill: black;
+    }
+
     .mainSection{
         margin-left: 220px;
     }
@@ -517,12 +542,32 @@ footer p{
     }
 
     .about__bio{
-        width: 75%;
-        margin: 0 auto;
         font-size: 1.7rem;
         background: white;
         border-radius: 40px;
         padding: 40px;
+    }
+
+    .about__bio, .workFirstItem{
+        width: 748px;
+        margin: 0 auto;
+    }
+
+    /*WORK SECTION*/
+    .workFirstItem{
+        padding: 40px;
+        border-radius: 40px;
+
+    }
+
+    .work__logo{
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+
+    .work__logoDescription ul{
+        font-size: 1rem;
+        letter-spacing: 1.1px;
     }
 
     /*SKILLS SECTION*/
